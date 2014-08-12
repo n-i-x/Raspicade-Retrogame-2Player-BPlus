@@ -17,33 +17,35 @@ Pinout Mapping
 
 ````
 Player 1 :
-GPIO 4  -> KEY_UP       // Up
-GPIO 17 -> KEY_DOWN     // Down
-GPIO 27 -> KEY_LEFT     // Left Joystick (4 pins)
-GPIO 22 -> KEY_RIGHT    // Right
-GPIO 10 -> KEY_LEFTCTRL // Button 1
-GPIO 9  -> KEY_LEFTALT  // Button 2
-GPIO 11 -> KEY_SPACE    // Button 3
-GPIO 5  -> KEY_LEFTSHIFT// Button 4
-GPIO 6  -> KEY_Z        // Button 5
-GPIO 12 -> KEY_X }      // Button 6
-GPIO 2  -> KEY_1        // Button Start P1
-GPIO 3  -> KEY_5        // Button Coins/Credits P1
-//Player 2 config
-{ 18, KEY_R }, // Up
-{ 23, KEY_F }, // Down
-{ 24, KEY_D }, // Left Joystick (4 pins)
-{ 25, KEY_G }, // Right
-{ 8, KEY_A }, // Button 1
-{ 7, KEY_S }, // Button 2
-{ 12, KEY_Q }, // Button 3
-{ 16, KEY_W }, // Button 4
-{ 20, KEY_E }, // Button 5
-{ 21, KEY_T }, // Button 6
-{ 19, KEY_2 }, // Button Start P2
-{ 26, KEY_6 }, // Button Coins/Credits P2
+GPIO 02 -> KEY_UP       // Up
+GPIO 03 -> KEY_DOWN     // Down
+GPIO 04 -> KEY_LEFT     // Left Joystick (4 pins)
+GPIO 17 -> KEY_RIGHT    // Right
+GPIO 27 -> KEY_LEFTCTRL // Button 1
+GPIO 22 -> KEY_LEFTALT  // Button 2
+GPIO 10 -> KEY_SPACE    // Button 3
+GPIO 09 -> KEY_LEFTSHIFT// Button 4
+GPIO 11 -> KEY_Z        // Button 5
+GPIO 05 -> KEY_X }      // Button 6
+GPIO 06 -> KEY_1        // Button Start P1
+GPIO 13 -> KEY_5        // Button Coins/Credits P1
+
+Player 2 :
+GPIO 18 -> KEY_R        // Up
+GPIO 23 -> KEY_F        // Down
+GPIO 24 -> KEY_D        // Left Joystick (4 pins)
+GPIO 25 -> KEY_G        // Right
+GPIO 08 -> KEY_A        // Button 1
+GPIO 07 -> KEY_S        // Button 2
+GPIO 12 -> KEY_Q        // Button 3
+GPIO 16 -> KEY_W        // Button 4
+GPIO 20 -> KEY_E        // Button 5
+GPIO 21 -> KEY_T        // Button 6
+GPIO 19 -> KEY_2        // Button Start P2
+GPIO 26 -> KEY_6        // Button Coins/Credits P2
 ````
 
+Maintaining Start P1 + Coins/Credits P1 more than 1 seconds will produce "KEY_ESC" (Escape Key).
 
 Installation
 ============
