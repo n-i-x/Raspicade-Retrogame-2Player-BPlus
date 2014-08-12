@@ -79,7 +79,7 @@ sudo nano /etc/rc.local
 Before the final "exit 0" line, insert this line:
 
 ````
-/home/pi/Retrogame-2players/retrogame &
+/home/pi/Raspicade-Retrogame-2Player-BPlus/retrogame &
 
 ````
 If you placed the software in a different location, this line should be changed accordingly. "sudo" isn't necessary here because the rc.local script is already run as root.
