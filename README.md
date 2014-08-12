@@ -94,4 +94,7 @@ The software will now be patiently waiting in the background, ready for use with
 
 Each emulator will have its own method for configuring keyboard input. Set them up so the keys match your controller outputs. Up/down/left/right from the arrow keys is a pretty common default among these programs, but the rest will usually require some tweaking.
 
+Arcade Wiring
+=============
 
+See https://github.com/ian57/Raspicade-Retrogame-2Player-BPlus/wiki
