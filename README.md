@@ -3,6 +3,48 @@ Retrogame2PlayersB+
 
 Raspberry Pi GPIO-to-USB utility for classic game emulators.
 
+Compilation
+===========
+
+````
+$ git clone https://github.com/ian57/Raspicade-Retrogame-2Player-BPlus.git
+$ cd Raspicade-Retrogame-2Player-BPlus
+$ make
+````
+
+Pinout Mapping
+==============
+
+````
+Player 1 :
+GPIO 4  -> KEY_UP       // Up
+GPIO 17 -> KEY_DOWN     // Down
+GPIO 27 -> KEY_LEFT     // Left Joystick (4 pins)
+GPIO 22 -> KEY_RIGHT    // Right
+GPIO 10 -> KEY_LEFTCTRL // Button 1
+GPIO 9  -> KEY_LEFTALT  // Button 2
+GPIO 11 -> KEY_SPACE    // Button 3
+GPIO 5  -> KEY_LEFTSHIFT// Button 4
+GPIO 6  -> KEY_Z        // Button 5
+GPIO 12 -> KEY_X }      // Button 6
+GPIO 2  -> KEY_1        // Button Start P1
+GPIO 3  -> KEY_5        // Button Coins/Credits P1
+//Player 2 config
+{ 18, KEY_R }, // Up
+{ 23, KEY_F }, // Down
+{ 24, KEY_D }, // Left Joystick (4 pins)
+{ 25, KEY_G }, // Right
+{ 8, KEY_A }, // Button 1
+{ 7, KEY_S }, // Button 2
+{ 12, KEY_Q }, // Button 3
+{ 16, KEY_W }, // Button 4
+{ 20, KEY_E }, // Button 5
+{ 21, KEY_T }, // Button 6
+{ 19, KEY_2 }, // Button Start P2
+{ 26, KEY_6 }, // Button Coins/Credits P2
+````
+
+
 Installation
 ============
 

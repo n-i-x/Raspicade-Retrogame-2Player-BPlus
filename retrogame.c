@@ -119,18 +119,18 @@ struct {
 	// retro gaming guide.
 	// Input   Output (from /usr/include/linux/input.h)
 	//Player 1 config
-	{  4,     KEY_UP       },   // Up
-	{ 17,     KEY_DOWN     },   // Down
-	{ 27,     KEY_LEFT     },   // Left Joystick (4 pins)
-	{ 22,     KEY_RIGHT    },   // Right
-	{ 10,     KEY_LEFTCTRL },   // Button 1
-	{  9,     KEY_LEFTALT  },   // Button 2
-	{ 11,     KEY_SPACE  },     // Button 3
-	{  5,     KEY_LEFTSHIFT  },   // Button 4
-	{  6,     KEY_Z  },   // Button 5
-	{ 12,     KEY_X  },   // Button 6
-	{  2,     KEY_1  },   // Button Start P1
-	{  3,     KEY_5  },   // Button Coins/Credits P1
+	{  2,     KEY_UP       },   // Up
+	{  3,     KEY_DOWN     },   // Down
+	{  4,     KEY_LEFT     },   // Left Joystick (4 pins)
+	{ 17,     KEY_RIGHT    },   // Right
+	{ 27,     KEY_LEFTCTRL },   // Button 1
+	{ 22,     KEY_LEFTALT  },   // Button 2
+	{ 10,     KEY_SPACE  },     // Button 3
+	{  9,     KEY_LEFTSHIFT  },   // Button 4
+	{ 11,     KEY_Z  },   // Button 5
+	{  5,     KEY_X  },   // Button 6
+	{  6,     KEY_1  },   // Button Start P1
+	{ 13,     KEY_5  },   // Button Coins/Credits P1
 	//Player 2 config
 	{  18,     KEY_R       },   // Up
 	{  23,     KEY_F     },   // Down
