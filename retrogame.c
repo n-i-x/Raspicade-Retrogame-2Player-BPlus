@@ -144,6 +144,8 @@ struct {
 	{  21,     KEY_T  },   // Button 6
 	{  19,     KEY_2  },   // Button Start P2
 	{  26,     KEY_6  },   // Button Coins/Credits P2
+	// Button to halt system on pin 15 -> sudo halt
+	{  15, 	   KEY_0 },    // Button to halt system -> sudo halt
 	// For credit/start/etc., use USB keyboard or add more buttons.
 	{  -1,     -1           } }; // END OF LIST, DO NOT CHANGE
 
@@ -470,8 +472,18 @@ int main(int argc, char *argv[]) {
 						extstate[j] = intstate[j];
 						keyEv.code  = io[i].key;
 						keyEv.value = intstate[j];
-						write(fd, &keyEv,
-						  sizeof(keyEv));
+						if ((keyEv.code==KEY_0)&&(keyEv.value==1))
+						{
+							system("sudo halt");
+							//system("echo \"that works\"");
+						}
+						else
+						{
+							write(fd, &keyEv,
+							sizeof(keyEv));
+						}
+						//write(fd, &keyEv,
+						//sizeof(keyEv));
 						c = 1; // Follow w/SYN event
 						if(intstate[j]) { // Press?
 							// Note pressed key
