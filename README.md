@@ -43,6 +43,7 @@ GPIO 20 -> KEY_E        // Button 5
 GPIO 21 -> KEY_T        // Button 6
 GPIO 19 -> KEY_2        // Button Start P2
 GPIO 26 -> KEY_6        // Button Coins/Credits P2
+GPIO 15 -> KEY_0        // Button to Halt System -> "sudo halt" is launch
 ````
 
 Maintaining Start P1 + Coins/Credits P1 more than 1 seconds will produce "KEY_ESC" (Escape Key).
