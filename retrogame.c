@@ -122,30 +122,18 @@ struct {
 	{  2,     KEY_UP       },   // Up
 	{  3,     KEY_DOWN     },   // Down
 	{  4,     KEY_LEFT     },   // Left Joystick (4 pins)
-	{ 17,     KEY_RIGHT    },   // Right
-	{ 27,     KEY_LEFTCTRL },   // Button 1
-	{ 22,     KEY_LEFTALT  },   // Button 2
-	{ 10,     KEY_SPACE  },     // Button 3
-	{  9,     KEY_LEFTSHIFT  },   // Button 4
-	{ 11,     KEY_Z  },   // Button 5
-	{  5,     KEY_X  },   // Button 6
-	{  6,     KEY_1  },   // Button Start P1
-	{ 13,     KEY_5  },   // Button Coins/Credits P1
-	//Player 2 config
-	{  18,     KEY_R       },   // Up
-	{  23,     KEY_F     },   // Down
-	{  24,     KEY_D     },   // Left Joystick (4 pins)
-	{  25,     KEY_G    },   // Right
-	{   8,     KEY_A },   // Button 1
-	{   7,     KEY_S  },   // Button 2
-	{  12,     KEY_Q  },     // Button 3
-	{  16,     KEY_W  },   // Button 4
-	{  20,     KEY_E  },   // Button 5
-	{  21,     KEY_T  },   // Button 6
-	{  19,     KEY_2  },   // Button Start P2
-	{  26,     KEY_6  },   // Button Coins/Credits P2
-	// Button to halt system on pin 15 -> sudo halt
-	{  15, 	   KEY_0 },    // Button to halt system -> sudo halt
+	{ 14,     KEY_RIGHT    },   // Right
+	{ 15,     KEY_LEFTCTRL },   // Button 1
+	{ 17,     KEY_LEFTALT  },   // Button 2
+	{ 24,     KEY_SPACE  },     // Button 3
+	{ 18,     KEY_LEFTSHIFT  }, // Button 4
+	{ 27,     KEY_Z  },         // Button 5
+	{ 22,     KEY_X  },         // Button 6
+	{ 10,     KEY_C  },         // Button 7
+	{ 23,     KEY_5  },         // Button 8
+	{  9,     KEY_1  },         // Button Start P1
+	{ 25,     KEY_3  },         // Button Coins/Credits P1
+	{  8, 	  KEY_0 },          // Button to halt system -> sudo halt
 	// For credit/start/etc., use USB keyboard or add more buttons.
 	{  -1,     -1           } }; // END OF LIST, DO NOT CHANGE
 
@@ -153,14 +141,14 @@ struct {
 // for a few seconds) issues an 'esc' keypress to MAME (which brings up
 // an exit menu or quits the current game).  The button combo is
 // configured with a bitmask corresponding to elements in the above io[]
-// array.  The default value here uses elements 10 and 11 of the ioStandard Table (credit and start
+// array.  The default value here uses elements 12 and 13 of the ioStandard Table (credit and start
 // in the 2 players pinout).  If you change this, make certain it's a combo
 // that's not likely to occur during actual gameplay (i.e. avoid using
 // joystick directions or hold-for-rapid-fire buttons).
 // Also key auto-repeat times are set here.  This is for navigating the
 // game menu using the 'gamera' utility; MAME disregards key repeat
 // events (as it should).
-const unsigned long vulcanMask = (1L << 10) | (1L << 11);
+const unsigned long vulcanMask = (1L << 12) | (1L << 13);
 const int           vulcanKey  = KEY_ESC, // Keycode to send
                     vulcanTime = 1000,    // Pinch time in milliseconds
                     repTime1   = 500,     // Key hold time to begin repeat
